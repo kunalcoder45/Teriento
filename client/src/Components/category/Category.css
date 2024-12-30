@@ -1,0 +1,130 @@
+.cate-Container {
+    display: flex;
+    overflow-x: auto;
+    padding: 40px;
+    gap: 20px;
+    background-color: #f9f3f3;
+    height: auto;
+}
+
+.cate-Container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cate-Container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.category {
+    width: auto;
+    height: 120px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
+}
+
+.cate-Items {
+    position: relative;
+    height: 100%;
+    width: 250px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cate-Items:hover {
+    transform: rotateX(8deg) translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cate-Img-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cate-Img-box img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.cate-Items:hover .cate-Img-box img .show{
+    transform: translateY(-10px) scale(1.2);
+}
+.cate-Img-box img:hover {
+    cursor: pointer;
+    transform: translateY(-10px) scale(1.2);
+}
+.title {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.available {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.show {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff6b6b;
+}
+.show a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .8rem;
+    transition: color 0.3s ease;
+}
+@media (max-width: 850px) {
+    .cate-Items {
+        width: 220px;
+    }
+    .show {
+        padding: 5px;
+    }
+    .show a {
+        font-size: .7;
+    }
+    .cate-Img-box {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .cate-Items {
+        width: 200px;
+        height: 90px;
+    }
+    .show {
+        padding: 0px 5px 5px 5px;
+    }
+    .show a {
+        font-size: .6rem;
+    }
+    .cate-Img-box {
+        width: 30px;
+        height: 30px;
+    }
+    .category {
+        height: 90px;
+    }
+}
+
