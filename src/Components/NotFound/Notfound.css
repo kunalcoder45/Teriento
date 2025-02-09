@@ -1,0 +1,30 @@
+.page_404 {
+    background: #fff;
+    height: 98vh;
+}
+
+.page_404 p {
+    text-align: center;
+}
+
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/722246/screenshots/3066818/404-page.gif);
+    background-repeat: no-repeat;
+    height: 580px;
+    width: 100%;
+    background-position: center;
+}
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    display: flex;
+    justify-content: center;
+}

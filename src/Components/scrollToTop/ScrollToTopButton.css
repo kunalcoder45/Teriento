@@ -1,0 +1,35 @@
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff808f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #ffaab4;
+    opacity: 1;
+}
+
+.scroll-to-top-btn:focus {
+    outline: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }

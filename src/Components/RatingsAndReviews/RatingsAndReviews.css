@@ -1,0 +1,185 @@
+.review-section {
+    width: 77%;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.write-review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.write-review i {
+    font-size: 24px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.write-review:hover,
+.write-review i:hover {
+    color: #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    width: 97%;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+.stars {
+    margin: 10px 0;
+}
+
+.stars .star {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.stars .star.active {
+    color: #ffd900;
+}
+
+.rating-save-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.rating-save-btn:hover {
+    outline: 1.5px solid #0056b3;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.user-review {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.user-review img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-rating {
+    margin-left: 10px;
+}
+
+.user-review .name {
+    font-weight: bold;
+}
+
+.review-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.review-actions p {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.review-edit {
+    color: #ffc107;
+}
+
+.review-edit:hover {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.review-delete {
+    color: #dc3545;
+}
+
+.review-delete:hover {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+/* 
+.review-actions {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.review-actions:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+} */
+
+.review-actions {
+    display: flex;
+    gap: 20px;
+    /* Space between icons */
+    align-items: center;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show tooltip on hover */
+.review-actions:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}

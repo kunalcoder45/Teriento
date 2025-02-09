@@ -1,0 +1,121 @@
+.products-container {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.filter-group {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+.filter-group h3 {
+    margin-bottom: 20px;
+}
+
+.items  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.items input {
+    margin-right: 10px;
+}
+
+@media (max-width:850px) {
+    .filter-sidebar {
+        max-width: 50%;
+    }
+
+    .search-prod-container {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    /* Sidebar styling */
+    .filter-sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #f4f4f4;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .filter-sidebar.open {
+        transform: translateX(0);
+    }
+
+    /* Toggle Button for Mobile */
+    .filter-toggle-btn {
+        display: none;
+        position: absolute;
+        top: 170px;
+        right: 10px;
+        z-index: 1001;
+        background-color: transparent;
+        color: black;
+        border: none;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .filter-toggle-btn {
+        display: block;
+    }
+
+}
+
+
+@media (max-width:550px) {
+    .filter-sidebar {
+        width: 50%;
+    }
+
+    .search-prod-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 4000px) {
+    .filter-toggle-btn {
+        display: none;
+    }
+
+    .filter-sidebar {
+        width: 16%;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+        margin-right: 10px;
+        margin-top: 10px;
+        position: sticky;
+        top: 20px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 414px) {
+    .filter-sidebar {
+        padding: 10px;
+    }
+    .items input {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 350px) {
+    .items  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
